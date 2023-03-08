@@ -60,3 +60,21 @@ img {
     font-size: 5rem;
     font-weight: normal;
 }
+
+
+@media (orientation: portrait) {
+    img {
+        height: 10vh;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .centerText::after,
+    .centerText::before{
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+}
