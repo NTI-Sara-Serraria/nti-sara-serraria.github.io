@@ -2,3 +2,9 @@ title: Sara Serraria Igreja
 description: Uma comunidade para amar, servir e transformar nossa cidade.
 url: https://saraserraria.com.br
 cover: /media/sara logo.jpeg
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
