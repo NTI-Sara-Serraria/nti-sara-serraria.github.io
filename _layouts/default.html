@@ -13,8 +13,8 @@ js:  /index-443bnFA3.js
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:image" content="{{ site.cover | relative_url }}" />
     <meta name="theme-color" content="#2a5bd9">
-    <link rel="stylesheet" href="{{css | relative_url}}">
-    <script type="module" src="{{ js | relative_url}}"></script>
+    <link rel="stylesheet" href="{{ page.css | relative_url }}">
+    <script type="module" src="{{ page.js | relative_url }}"></script>
     <style type="text/css">
         :where(html[dir="ltr"]),
         :where([data-sonner-toaster][dir="ltr"]) {
