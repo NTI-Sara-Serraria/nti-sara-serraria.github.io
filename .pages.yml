@@ -1,4 +1,17 @@
 media: media
+components:
+  media_url:
+    label: URL de midia externa
+    type: object
+    fields:
+      - name: url
+        label: URL da midia
+        type: text
+        required: true
+      - name: desc
+        label: descriçao
+        type: text
+  
 content:
   - name: posts
     label: Posts
