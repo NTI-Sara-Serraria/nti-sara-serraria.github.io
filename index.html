@@ -5,20 +5,18 @@ layout: default
 <div id="root"></div>
 <section id="posts" class="scroll-mt-24 bg-secondary/30 py-20">
     <div class="container">
-        <div class="flex items-center gap-3">
+        <div class="flex flex-col items-center gap-3">
             <h2 class="text-3xl font-bold">Posts</h2>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {% for post in site.posts %}
-            <div class="flex flex-col">
-                <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    <a href="{{ post.url }}">
-                        <div class="rounded-lg border p-4">
-                            <p class="font-semibold">{{ post.title}}</p>
-                            <p class="text-muted-foreground">{{ post.date}}</p>
-                        </div>
-                    </a>
-                </div>
+                <a href="{{ post.url }}">
+                    <div class="rounded-lg border p-4">
+                        <p class="font-semibold">{{ post.title}}</p>
+                        <p class="text-muted-foreground">{{ post.date}}</p>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
 </section>
