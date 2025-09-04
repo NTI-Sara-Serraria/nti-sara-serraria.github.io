@@ -8,10 +8,14 @@ layout: default
         <div class="flex items-center gap-3">
             <h2 class="text-3xl font-bold">Posts</h2>
             {% for post in site.posts %}
-            <div class="mt-6 grid gap-4 sm:grid-cols-2">
-                <div class="rounded-lg border p-4">
-                    <p class="font-semibold">{{ post.title}}</p>
-                    <p class="text-muted-foreground">{{ post.date}}</p>
+            <div class="container">
+                <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                    <a href="{{ post.url }}">
+                        <div class="rounded-lg border p-4">
+                            <p class="font-semibold">{{ post.title}}</p>
+                            <p class="text-muted-foreground">{{ post.date}}</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             {% endfor %}
