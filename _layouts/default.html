@@ -1,5 +1,6 @@
 ---
-#Just to trigger jekyll
+css: /index-BYrWh-zD.css
+js:  /index-443bnFA3.js
 ---
 <html lang="pt-BR">
 
@@ -12,8 +13,8 @@
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:image" content="{{ site.cover | relative_url }}" />
     <meta name="theme-color" content="#2a5bd9">
-    <link rel="stylesheet" href="./index-BYrWh-zD.css">
-    <script type="module" src="./index-443bnFA3.js"></script>
+    <link rel="stylesheet" href="{{css | relative_url}}">
+    <script type="module" src="{{ js | relative_url}}"></script>
     <style type="text/css">
         :where(html[dir="ltr"]),
         :where([data-sonner-toaster][dir="ltr"]) {
