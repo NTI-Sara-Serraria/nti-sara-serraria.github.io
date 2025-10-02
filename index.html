@@ -1,22 +1,20 @@
----
-title: homepage
-layout: default
----
-<div id="root"></div>
-<section id="posts" class="scroll-mt-24 bg-secondary/30 py-20">
-    <div class="container">
-        <div class="flex flex-col items-center gap-3">
-            <h2 class="text-3xl font-bold">Posts</h2>
-            <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {% for post in site.posts %}
-                <a href="{{ post.url }}">
-                    <div class="rounded-lg border p-4">
-                        <p class="font-semibold">{{ post.title}}</p>
-                        <p class="text-muted-foreground">{{ post.date}}</p>
-                    </div>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</section>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Serraria — Igreja</title>
+    <meta name="description" content="Igreja Sara Serraria — uma comunidade para amar, servir e transformar nossa cidade." />
+    <meta property="og:title" content="Sara Serraria — Igreja" />
+    <meta property="og:description" content="Uma comunidade para amar, servir e transformar nossa cidade." />
+    <meta name="theme-color" content="#c91d1d" />
+    <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets%2Fa332c5683cff4b13a38851dbc2a2be86%2F6a4fdb30241f4a599ee39950b16a3329?format=webp&width=800" />
+    <script type="module" crossorigin src="/assets/index-BIVAafj9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Ce3gXDKX.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+  </body>
+</html>
